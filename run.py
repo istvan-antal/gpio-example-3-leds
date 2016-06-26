@@ -12,13 +12,13 @@ try:
     while 1:
         GPIO.output(13, GPIO.LOW)
         GPIO.output(11, GPIO.HIGH)
-        time.sleep(100)
+        time.sleep(0.3)
         GPIO.output(11, GPIO.LOW)
         GPIO.output(12, GPIO.HIGH)
-        time.sleep(100)
+        time.sleep(0.3)
         GPIO.output(12, GPIO.LOW)
         GPIO.output(13, GPIO.HIGH)
-        time.sleep(100)
+        time.sleep(0.3)
 except KeyboardInterrupt:
     print " Quit"
     GPIO.cleanup()
